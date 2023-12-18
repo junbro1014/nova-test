@@ -2,7 +2,7 @@
   <Card class="flex flex-col items-center justify-center">
     <div class="px-8 py-3 w-full">
         <div class="py-8">
-            <canvas ref="andonChartRef"></canvas>
+            <canvas ref="chartRef"></canvas>
         </div>
     </div>
   </Card>
@@ -160,11 +160,11 @@ const chartOptions = {
     maintainAspectRatio: false
 };
 
-const andonChartRef = ref(null);
+const chartRef = ref(null);
 let andonChart;
 
 onMounted(() => {
-    const andonCtx = andonChartRef.value.getContext('2d');
+    const andonCtx = chartRef.value.getContext('2d');
     andonChart = new Chart(andonCtx, {
         type: 'bar',
         data: chartData,

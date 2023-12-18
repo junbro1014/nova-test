@@ -168,10 +168,10 @@ __webpack_require__.r(__webpack_exports__);
       responsive: true,
       maintainAspectRatio: false
     };
-    var andonChartRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(null);
+    var chartRef = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(null);
     var andonChart;
     (0,vue__WEBPACK_IMPORTED_MODULE_0__.onMounted)(function () {
-      var andonCtx = andonChartRef.value.getContext('2d');
+      var andonCtx = chartRef.value.getContext('2d');
       andonChart = new chart_js_auto__WEBPACK_IMPORTED_MODULE_1__["default"](andonCtx, {
         type: 'bar',
         data: chartData,
@@ -187,7 +187,7 @@ __webpack_require__.r(__webpack_exports__);
         chartData = v;
       },
       chartOptions: chartOptions,
-      andonChartRef: andonChartRef,
+      chartRef: chartRef,
       get andonChart() {
         return andonChart;
       },
@@ -230,7 +230,7 @@ var _hoisted_2 = {
   "class": "py-8"
 };
 var _hoisted_3 = {
-  ref: "andonChartRef"
+  ref: "chartRef"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Card = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Card", true);
